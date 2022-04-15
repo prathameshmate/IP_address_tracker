@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Details = ({ data, zoom }) => {
+const Details = ({ data }) => {
     return (
         <>
             <ul className="details">
