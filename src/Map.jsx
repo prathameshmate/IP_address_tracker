@@ -5,7 +5,6 @@ import mapboxgl from "mapbox-gl";
 mapboxgl.accessToken = "pk.eyJ1IjoidmVkYW50MjI1NCIsImEiOiJjbDFiemtkeHUwMm55M2NtZnEycXFhNGswIn0.KAVQyFcs4tA34VeEQRq11g";
 
 const Map = ({ geoLocation, zoom, flag }) => {
-
     const mapContainer = useRef(null);
     const map = useRef(null);
     const marker = new mapboxgl.Marker();

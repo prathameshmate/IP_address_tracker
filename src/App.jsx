@@ -11,7 +11,6 @@ const App = () => {
   const [zoom, updateZoom] = useState(-1);
   const [flag, updateFlag] = useState(false);
 
-
   const getIpData = async () => {
     try {
       var access = document.getElementById("inp")
