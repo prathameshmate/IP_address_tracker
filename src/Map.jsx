@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import mapboxgl from "mapbox-gl";
 
 // Initializing required variables
-mapboxgl.accessToken = "pk.eyJ1IjoidmVkYW50MjI1NCIsImEiOiJjbDFiemtkeHUwMm55M2NtZnEycXFhNGswIn0.KAVQyFcs4tA34VeEQRq11g";
+mapboxgl.accessToken = process.env.REACT_APP_ACCESS_TOKEN;
 
 const Map = ({ geoLocation, zoom, flag }) => {
     const mapContainer = useRef(null);

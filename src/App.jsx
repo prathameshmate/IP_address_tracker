@@ -20,7 +20,7 @@ const App = () => {
         throw Error;
       }
       const result = await axios.get(
-        `https://geo.ipify.org/api/v2/country,city?apiKey=at_ZiotF5KatcvupVRG3vVWPByAMD9r1&ipAddress=${ip}&domain=${ip}`
+        `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.REACT_APP_API_KEY}&ipAddress=${ip}&domain=${ip}`
       );
       updateData(result.data);
       const { lng, lat } = result.data.location;
