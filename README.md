@@ -10,7 +10,7 @@
 - [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces.
 - [mui_icons](https://mui.com/material-ui/material-icons/) - Used to add icons in react.
 - [Mapbox](https://www.mapbox.com/) - Used to add map in our application.
-- [Ipify API](https://www.ipify.org/) - It help to fetch the requried json data from [ipify](https://www.ipify.org/)
+- [Ipify API Key](https://www.ipify.org/) - It help to fetch the requried json data from [ipify](https://www.ipify.org/)
 
 # How to install and run the project
 
