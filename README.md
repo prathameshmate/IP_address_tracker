@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Show IP address location on a single page web application with an attractive and user-friendly UI. 
+- The main idea of project is to fetch and display the location of IP address based on user inputs in a user-friendly way.
+- The application shows the location of user input IP address. The response json file contains multiple things like location , lat , lng , country ,city etc 
 
-## Available Scripts
+# Tools used
 
-In the project directory, you can run:
+[NodeJS](https://nodejs.org/) - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+[ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces.
+[mui icons](https://reactjs.org/](https://mui.com/material-ui/material-icons/) - Used to add icons in react
 
-### `npm start`
+# How to install and run the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Install NodeJS from [here](https://nodejs.org/). It is a javascript runtime that allows running javascript outside of browser.
+- Download or clone the project. Use command `git clone` to clone.
+- cd into the project directoy and add a new file named **.env**
+- Create your free account on [ipify API](https://www.ipify.org/) and grab your api key.
+- Create your free account on [Mapbox](https://www.mapbox.com/) and grab your mapbox access token.
+- Add this two lines to .env file.
+  - REACT_APP_API_KEY=paste_your_api_key_here 
+  - REACT_APP_ACCESS_TOKEN=paste_your_mapbox_access_token_here
+- Run these two commands, `npm install`, then `npm start`.
+  - `npm install` , this command will install the required dependencies from package.json
+  - `npm start`, this command will start the development server on port no. 3000
+- Visit localhost to view the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Note - React will automatically open up the browser once the developement server is up and running.**
 
-### `npm test`
+#How to use the project
+- Simple usage, just enter the IP address that you want to view location and click on Forward arrow.
+- After that Marker of Mapbox slowly slide to the location of IP address using Longitude amd Latitude.
+- If the enter IP address or Domain is wrong then it gives alert dialog box.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Screenshots
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
